@@ -1,0 +1,36 @@
+O Projeto ProjectAmil é um arquétipo de um
+painel com o ranking do resultado de uma partida
+de um game entre 3 participantes.
+
+1. Foi desenvolvido em Java, uma aplicação Desktop,
+onde o único framework utilizado foi o builder Maven,
+escolhido pela disponibilização de bibliotecas já 
+embarcadas com o build e disponibilização dos testes,
+para evidenciar o TDD (desenvolvimento orientado a testes)
+
+2. De acordo com as regras do jogo repassadas, tudo 
+inicia-se com a leitura de um trecho de log, onde estão
+os dados de usuario, armas, quantidade de mortes e de
+assassinatos, como também os "plus", como os awards.
+Foi-se utilizado a API Java IO(Input/OutputStream) para
+o tratamento de input destes dados.
+
+3. Após coletados estes dados, estes mesmos serão 
+processados pela aplicação para comparar as quantidades
+de assassinatos e mortes entre os participantes do match.
+Estas regras de negocio estão coesos na aplicação com 
+cadas objeto realizando seu papel específico. Foram muito
+utilizados nesta etapa tratamento de Strings Java (APIs
+StringBuildes, métodos internos da classe Wrapper String)
+
+4. E para finalizar, a API Java selecionada para exibição
+do resultado deste ranking foi o Swing por questão de economia
+no consumo de memória local e o tempo de desenvolvimento 
+e configuração de ambiente.
+
+5. Para executar o projeto é simples, basta no mínimo 
+o usuário a testar o projeto ter instalado em sua máquina
+o JDK versão 6, pois é onde ele foi compilado. Este jar 
+executável encontra-se na pasta target do projeto 
+disponibilizado no github (https://github.com/jleme654/GameAmil.git),
+e para facilitar ainda mais, estará em anexo via email.
